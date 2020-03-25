@@ -35,7 +35,21 @@ const config = {
           // included in the size array
           size: [72, 96, 128, 144, 152, 192, 384, 512]
         }
-      ]
+      ],
+      module: {
+        rules: [
+          {
+            test: /\.js$/,
+            exclude: /node_modules/,
+            use: {
+              loader: "babel-loader",
+              options: {
+                presets: ["@babel/preset-env"]
+              }
+            }
+          }
+        ]
+      }
     })
   ]
 }
