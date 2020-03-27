@@ -96,7 +96,7 @@ self.addEventListener("fetch", (event) => {
         }
         // request is not in cache. make network request and cache the response
         caches
-          .open(STATIC_CACHE)
+          .open(RUNTIME_CACHE)
           .then(response => {
             return response || fetch(event.request)
           })
