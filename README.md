@@ -19,8 +19,12 @@ I want to be able to track my withdrawals and deposits with or without a interne
 ![Subtract funds example](images/SUBTRACT-funds-budget-tracker.PNG)
 
 ### Technologies Used 
- * NodeJS
- * JavaScript
- * Github API
- * HTML
- * CSS
+
+- PWA
+- JavaScript
+- Express
+- MongoDB
+- Mongoose ORM
+- MVC
+- HTML
+- CSS
