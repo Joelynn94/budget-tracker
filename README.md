@@ -13,10 +13,10 @@ I want to be able to track my withdrawals and deposits with or without a interne
 ## App Demo
 
 ### Add Funds 
-![Add funds example](images/ADD-funds-budget-tracker)
+![Add funds example](images/ADD-funds-budget-tracker.PNG)
 
 ### Subtract Funds
-![Subtract funds example](images/SUBTRACT-funds-budget-tracker)
+![Subtract funds example](images/SUBTRACT-funds-budget-tracker.PNG)
 
 ### Technologies Used 
  * NodeJS
