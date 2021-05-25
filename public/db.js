@@ -6,7 +6,7 @@ const indexedDB =
   window.msIndexedDB ||
   window.shimIndexedDB;
 
-let db;
+let db = null;
 const request = indexedDB.open('budget', 1);
 
 request.onupgradeneeded = ({ target }) => {
@@ -24,7 +24,7 @@ request.onsuccess = ({ target }) => {
 };
 
 request.onerror = function (event) {
-  console.log('Woops! ' + event.target.errorCode);
+  console.warn('An error occured: ' + event.target.errorCode);
 };
 
 function saveRecord(record) {
